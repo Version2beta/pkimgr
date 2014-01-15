@@ -1,5 +1,7 @@
 # Pkimgr
 
+THIS PROJECT IS NOT PRODUCTION READY. Chances are good it won't work for you even a little, so don't even try, k?
+
 pkimgr makes x.509 certificates, and what it makes it can also take away.
 
 ## Installation
