@@ -5,3 +5,4 @@ describe 'my test' do
     true.must_equal true
   end
 end
+
