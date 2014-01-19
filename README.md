@@ -1,12 +1,16 @@
 # Pkimgr
 
-THIS PROJECT IS NOT PRODUCTION READY. Chances are good it won't work for you even a little, so don't even try, k?
+THIS PROJECT IS NOT PRODUCTION READY. Chances are good it won't work for you even a little, so don't even try, ok?
 
-pkimgr makes x.509 certificates, and what it makes it can also take away.
+pkimgr makes x.509 certificates, and what it makes it can also take away. This is a relatively small scale manager, good for creating a handful of certificate authorities with a few dozen certificates each.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+The prima facie use of pkimgr is to manage one or a few libraries of certificates at the command line. To use it this way, you currently need a Ruby environment, and can install using:
+
+    $ gem install pkimgr
+
+pkimgr is also intended to make programming with certificates a little easier. To use it as a library, add this line to your application's Gemfile:
 
     gem 'pkimgr'
 
@@ -14,11 +18,7 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install pkimgr
-
-## Usage
+## Usage (command line)
 
 ### The state of things
 
@@ -108,7 +108,7 @@ Revoke the client with certID.
 
 ## Sample configuration file
 
-pkimgr configuration is stored as YAML. The preferred location is ~/.pkimgr.conf, but /etc/pkimgr.conf 
+pkimgr configuration is stored as YAML. The preferred location is ~/.pkimgr.conf, but /etc/pkimgr.conf
 
 ```yaml
 directory: ~/.pkimgr/
@@ -238,7 +238,7 @@ pkimgr's home directory is organized as follows:
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/pkimgr/fork )
+1. Fork it ( http://github.com/version2beta/pkimgr/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
